@@ -23,7 +23,7 @@ public class SetAutoCommit_1108 {
 
         Connection connection=null;
         try{
-            connection= DriverManager.getConnection(url,username,psw
+            connection= DriverManager.getConnection(url,username,pswd);
             connection.setAutoCommit(false);
 
             String withdrawlSQL="update account set balance=balance-? where id=?";
