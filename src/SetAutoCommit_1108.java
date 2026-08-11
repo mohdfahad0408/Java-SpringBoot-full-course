@@ -60,7 +60,7 @@ public class SetAutoCommit_1108 {
                 System.out.println(rollback.getMessage());
             }
         }
-8
+
 
     }
 
