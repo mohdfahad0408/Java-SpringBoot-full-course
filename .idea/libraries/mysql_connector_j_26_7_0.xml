@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mysql-connector-j-26.7.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../mysql-connector-j-26.7.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/HikariCP-7.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
