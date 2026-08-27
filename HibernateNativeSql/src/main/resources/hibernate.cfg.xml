@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <!-- a SessionFactory instance listed as /jndi/name -->
+    <session-factory>
+        <!-- properties -->
+        <!--        connecting my sql-->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/university</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <!--        A Hibernate Dialect is a configuration class that acts as a translator
+        Hibernate's database-independent queries (HQL or JPQL) and the specific SQL syntax required
+        by a target relational database.Because different relational database management systems (RDBMS)
+        like MySQL, Oracle, and PostgreSQL have unique syntaxes, data types, and functions, the Dialect
+        class ensures that Hibernate produces highly optimized, valid SQL statements tailored to your
+        chosen database platform-->
+
+        <property name="hibernate-dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <property name="hibernate.show_sql">true</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="org.example.Student"/>
+
+
+
+
+
+    </session-factory>
+
+</hibernate-configuration>

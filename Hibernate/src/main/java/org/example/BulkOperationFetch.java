@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public class BulkOperationFetch {
-    //We use HQL(HIbernate query language
+    //We use HQL(HIbernate query language)
     // it is used to do bulk operation
     public static void main(String[] args) {
         Session session=HibernateUtil.getSessionFactory().openSession();
